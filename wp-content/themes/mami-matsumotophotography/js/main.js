@@ -108,7 +108,7 @@ jQuery(function(){
 	$items = jQuery('.gallery-item')
 
 
-	doMasonry(".Ray");
+	doMasonry(".active");
 	
 	function doMasonry(filterTag){
 		if(index == 0) {
