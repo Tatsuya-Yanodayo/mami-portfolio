@@ -107,10 +107,10 @@ jQuery(function(){
 	var $filters = jQuery('#filters [data-filter]'),
 	$items = jQuery('.gallery-item')
 
-
-	doMasonry(".active");
+	doMasonry();
 	
 	function doMasonry(filterTag){
+		filterTag = $filters.filter(".active").attr('data-filter');
 		if(index == 0) {
 			console.log("はじめの処理");
 			console.log(filterTag);
@@ -154,13 +154,11 @@ jQuery(function(){
 		$filters.removeClass('active');
 		$this.addClass('active');
 
-		var filterTag = $this.attr('data-filter');
-
 		$items.removeClass('is-animated')
 			.fadeOut().promise().done(function() {
-				$items.filter(filterTag)
+				$items.filter($this.attr('data-filter'))
 					.addClass('is-animated').fadeIn();
-				doMasonry(filterTag);
+				doMasonry();
 			});		
 	}); 
 });
