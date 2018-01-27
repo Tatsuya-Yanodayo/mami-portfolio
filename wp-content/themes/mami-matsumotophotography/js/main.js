@@ -108,7 +108,7 @@ jQuery(function(){
 	$items = jQuery('.gallery-item')
 
 
-	doMasonry(".Japan");
+	doMasonry(".Ray");
 	
 	function doMasonry(filterTag){
 		if(index == 0) {
