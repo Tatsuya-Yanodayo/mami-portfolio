@@ -22,6 +22,7 @@ Template Name: biography
   <div id="photo"><img src="<?php bloginfo('template_directory');?>/img/prof.jpg"></div>
 
   <p id="des">1993年生まれ、フォトグラファー。<br>
+  関西を中心に活動。<br>
 </p>
 
 <p id="sns">
