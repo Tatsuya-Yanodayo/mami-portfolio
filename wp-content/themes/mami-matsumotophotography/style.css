@@ -407,7 +407,6 @@ img {
 		padding-bottom: 15px;
 		z-index: 999;
 		position: relative;
-		background-color: #fff;
 	}
 	#top-head h1.logo a div {
 		margin: 0 auto;
@@ -627,7 +626,6 @@ img {
 		padding-bottom: 23px;
 		z-index: 999;
 		position: relative;
-		background-color: #fff;
 	}
 	#top-head.fixed .logo,
 	#top-head .logo {}
