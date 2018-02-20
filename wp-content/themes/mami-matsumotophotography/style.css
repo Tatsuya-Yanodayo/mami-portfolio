@@ -367,7 +367,7 @@ img {
 }
 */
 
-.menu {
+.menu-head_global_nav-container {
 	height: 100%;
 }
 
@@ -441,7 +441,7 @@ img {
 	    margin: 0;
 	}
 	
-	#global-nav .menu {
+	#global-nav .menu-head_global_nav-container {
 	    width: 100%;
 	    margin-top: 15px;
 	}
@@ -653,7 +653,7 @@ img {
 	    margin: 0;
 	}
 	
-	#global-nav .menu {
+	#global-nav .menu-head_global_nav-container {
 	    width: 100%;
 	    margin-top: 15px;
 	}
