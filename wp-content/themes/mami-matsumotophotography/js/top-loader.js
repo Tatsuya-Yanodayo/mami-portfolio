@@ -36,24 +36,18 @@ jQuery(function () {
       if (current >= 100) {
         clearInterval(progressTimer);
         $progress.addClass('progress-complete');
-        $progressBar.add($progressText)
-          .delay(300)
+        $progress.delay(300)
           .animate({
             opacity: 0
-          }, 250, function () {
-            jQuery.when(
-              $progress.animate({
-                opacity: 0
-              }, 400)
-            ).done(function () {
-              $progress.hide();
-            });
+          }, 400)
+          .done(function () {
+            $progress.hide();
           });
-      }
+      };
+    }
 
-      if (current > 99.9) {
-        current = 100;
-      }
+    if (current > 99.9) {
+      current = 100;
     }
   }
 
