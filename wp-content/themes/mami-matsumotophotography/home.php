@@ -1,9 +1,5 @@
-
-
 <?php get_header(); ?>
 
-     <!--メインスクリプト読み込み-->
-    <?php wp_enqueue_script('top-loader', get_bloginfo('template_url').'/js/top-loader.js', array('jquery')); ?>
 
 
 <div class="progress" id="progress">
@@ -19,6 +15,5 @@
 </div>
 
 
+
 <?php get_footer(home); ?>
-
-

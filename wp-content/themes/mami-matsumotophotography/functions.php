@@ -191,6 +191,7 @@ function my_gallery_shortcode( $attr ) {
 }
 
 
+
 //本体ギャラリーCSS停止
 add_filter( 'use_default_gallery_style', '__return_false' );
 
@@ -201,3 +202,55 @@ add_filter( 'wp_calculate_image_srcset', 'disable_srcset' );
 
 
 add_theme_support('menus');
+
+
+
+
+
+
+
+
+
+if ( !is_admin() ) {
+  function register_script() {
+    /* ハンバーガーメニュー */
+    wp_register_script( 'hmenu', get_bloginfo( 'template_directory' ) . '/js/hmenu.js', array('jquery') );
+    /* タイルレイアウト */
+    wp_register_script( 'masonry', get_bloginfo( 'template_directory' ) . '/js/masonry.pkgd.min.js', array('jquery') );
+    wp_register_script( 'imagesloaded', get_bloginfo( 'template_directory' ) . '/js/imagesloaded.pkgd.min.js', array('jquery') );
+    /* スライダー */
+    wp_register_script( 'cycle_all', get_bloginfo( 'template_directory' ).'/js/jquery.cycle.all.js', array('jquery') );
+    wp_register_script( 'maximage', get_bloginfo( 'template_directory' ).'/js/jquery.maximage.js', array('jquery') );
+    wp_register_script( 'run_maximage', get_bloginfo( 'template_directory' ).'/js/run_maximage.js', array('jquery', 'cycle_all', 'maximage') );
+    /* 写真ポップアップ */
+    wp_register_script( 'magnific-popup', get_bloginfo( 'template_directory' ).'/js/jquery.magnific-popup.min.js', array('jquery') );
+    /* トップページローダー */
+    wp_register_script( 'top_loader', get_bloginfo( 'template_directory' ).'/js/top-loader.js', array('jquery') );
+    /* 画像ポップアップ */
+    wp_register_script( 'run_imagepopup', get_bloginfo( 'template_directory' ).'/js/run_imagepopup.js', array('jquery', 'magnific-popup') );
+    
+    /* ポートフォリオスクリプト */
+    wp_register_script( 'portfolio_loader', get_bloginfo( 'template_directory' ) . '/js/portfolio-loader.js', array('jquery', 'imagesloaded', 'masonry') );
+
+  }
+  
+  function add_script() {
+    register_script();
+    wp_enqueue_script( 'jquery' );
+    wp_enqueue_script( 'imagesloaded' );
+    if ( is_home() || is_front_page() ) {
+      wp_enqueue_script('top_loader');
+      wp_enqueue_script('cycle_all');
+      wp_enqueue_script('maximage');
+      wp_enqueue_script('run_maximage');
+    } elseif ( is_page( 'PORTFOLIO' ) ) {
+      wp_enqueue_script( 'masonry' );
+      wp_enqueue_script( 'magnific-popup' );
+      wp_enqueue_script( 'portfolio_loader' );
+      wp_enqueue_script( 'run_imagepopup' );
+    }
+    wp_enqueue_script( 'hmenu' );
+    wp_enqueue_script( 'mainscript' );
+  }
+  add_action( 'wp_enqueue_scripts', 'add_script' );
+}

@@ -29,25 +29,6 @@
 	<!-- フォントオーサム読み込み -->
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
 
-	<!--jquery読み込み-->
-	<?php wp_enqueue_script('jquery'); ?>
-
-	<!--タイルレイアウト読み込み-->
-    <?php wp_enqueue_script('masonry', get_bloginfo('template_url').'/js/masonry.pkgd.min.js', array('jquery')); ?>
-    <!--タイルレイアウト補助読み込み-->
-    <?php wp_enqueue_script('imagesloaded', get_bloginfo('template_url').'/js/imagesloaded.pkgd.min.js', array('jquery')); ?>
-    <!-- レイジーロードの読み込み -->
-	<?php wp_enqueue_script('lazyload', get_bloginfo('template_url').'/js/jquery.lazyload.js', array('jquery')); ?>
-
-     <!--スライダー読み込み-->
-    <?php wp_enqueue_script('cycle.all', get_bloginfo('template_url').'/js/jquery.cycle.all.js', array('jquery')); ?>
-    <?php wp_enqueue_script('maximage', get_bloginfo('template_url').'/js/jquery.maximage.js', array('jquery')); ?>
-    
-    <!-- 写真ポップアップの読み込み -->
-	<?php wp_enqueue_script('magnific-popup', get_bloginfo('template_url').'/js/jquery.magnific-popup.min.js', array('jquery')); ?>    
-        
-     <!--メインスクリプト読み込み-->
-    <?php wp_enqueue_script('mainsprict', get_bloginfo('template_url').'/js/main.js', array('jquery')); ?>
 
 
     <?php wp_head() ?>
