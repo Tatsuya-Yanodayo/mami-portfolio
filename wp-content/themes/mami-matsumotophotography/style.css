@@ -187,10 +187,16 @@ img {
 
 #global-nav ul li a {
   color: #474747;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   width: 100%;
   height: 100%;
   text-align: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
   align-items: center;
   padding: 0;
 }
@@ -212,6 +218,7 @@ img {
   padding-top: 0px;
   height: 65px;
   background: rgba(255, 255, 255, 0.7);
+  -o-transition: top 0.65s ease-in;
   transition: top 0.65s ease-in;
   -webkit-transition: top 0.65s ease-in;
   -moz-transition: top 0.65s ease-in;
@@ -264,7 +271,7 @@ img {
   left: 17px;
   top: 15px;
   -webkit-transition: .35s ease-in-out;
-  -moz-transition: .35s ease-in-out;
+  -o-transition: .35s ease-in-out;
   transition: .35s ease-in-out;
 }
 
@@ -291,9 +298,9 @@ img {
 .sns_button {
   float: left;
   margin: 18px 3px 13px 0px;
+  -webkit-box-shadow: inset 0 0 0 0px #191919;
   box-shadow: inset 0 0 0 0px #191919;
   border-radius: 100%;
-  -moz-transition: all 280ms ease;
   -o-transition: all 280ms ease;
   -webkit-transition: all 280ms ease;
   transition: all 280ms ease;
@@ -310,7 +317,6 @@ img {
   color: #191919;
   text-align: center;
   vertical-align: middle;
-  -moz-transition: all 280ms ease;
   -o-transition: all 280ms ease;
   -webkit-transition: all 280ms ease;
   transition: all 280ms ease;
@@ -319,7 +325,6 @@ img {
 .sns_button i {
   font-size: 19px;
   vertical-align: middle;
-  -moz-transition: all 280ms ease;
   -o-transition: all 280ms ease;
   -webkit-transition: all 280ms ease;
   transition: all 280ms ease;
@@ -428,7 +433,7 @@ img {
     background-color: #191919;
     opacity: 0;
     -webkit-transition: all .5s ease-in-out;
-    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;
     display: block;
     visibility: hidden;
@@ -467,6 +472,9 @@ img {
     width: 100%;
     height: 100%;
     text-align: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
     align-items: center;
     font-size: 18px;
   }
@@ -523,7 +531,7 @@ img {
   .open #nav-toggle span:nth-child(1) {
     top: 20px;
     -webkit-transform: rotate(315deg);
-    -moz-transform: rotate(315deg);
+    -ms-transform: rotate(315deg);
     transform: rotate(315deg);
   }
   .open #nav-toggle span:nth-child(2) {
@@ -533,7 +541,7 @@ img {
   .open #nav-toggle span:nth-child(3) {
     top: 20px;
     -webkit-transform: rotate(-315deg);
-    -moz-transform: rotate(-315deg);
+    -ms-transform: rotate(-315deg);
     transform: rotate(-315deg);
   }
 
@@ -552,6 +560,7 @@ img {
   .sns_button {
     margin: 0 0 0 9px;
     float: left;
+    -webkit-box-shadow: inset 0 0 0 0px #FFF;
     box-shadow: inset 0 0 0 0px #FFF;
     width: 34px;
     height: 34px;
@@ -638,7 +647,7 @@ img {
     background-color: #191919;
     opacity: 0;
     -webkit-transition: all .5s ease-in-out;
-    -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;
     display: block;
     visibility: hidden;
@@ -681,6 +690,9 @@ img {
     width: 100%;
     height: 100%;
     text-align: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
     align-items: center;
     font-size: 18px;
   }
@@ -712,7 +724,7 @@ img {
   .open #nav-toggle span:nth-child(1) {
     top: 20px;
     -webkit-transform: rotate(315deg);
-    -moz-transform: rotate(315deg);
+    -ms-transform: rotate(315deg);
     transform: rotate(315deg);
   }
   .open #nav-toggle span:nth-child(2) {
@@ -722,7 +734,7 @@ img {
   .open #nav-toggle span:nth-child(3) {
     top: 20px;
     -webkit-transform: rotate(-315deg);
-    -moz-transform: rotate(-315deg);
+    -ms-transform: rotate(-315deg);
     transform: rotate(-315deg);
   }
   .open #top-nav {
@@ -740,6 +752,7 @@ img {
   .sns_button {
     margin: 0 0 0 9px;
     float: left;
+    -webkit-box-shadow: inset 0 0 0 0px #FFF;
     box-shadow: inset 0 0 0 0px #FFF;
     width: 34px;
     height: 34px;
