@@ -1093,6 +1093,12 @@ div#photo img {
 div#main p#des {
   padding-top: 30px;
   font-size: 14px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto;
+  text-align: left;
+  line-height: 1.9em;
 }
 
 div#main p#sns {
