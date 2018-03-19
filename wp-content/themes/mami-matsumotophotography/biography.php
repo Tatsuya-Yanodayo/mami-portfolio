@@ -21,8 +21,15 @@ Template Name: biography
   <h2>Freelance Photographer</h2>
   <div id="photo"><img src="<?php bloginfo('template_directory');?>/img/prof.jpg"></div>
 
-  <p id="des">1993年生まれ、フォトグラファー。<br>
-  関西を中心に活動。<br>
+  <p id="des">
+  松本真実（Mami matsumoto）<br>
+フォトグラファー、webデザイナー、ROOTBOX編集長、帽子デザイナー。<br> 
+1993年大阪・枚方生まれ。 <br>
+民族衣装、古着が好きで、2016年新卒で帽子メーカーに入社。<br> 
+営業、企画、バイヤーを経験。 <br>
+学生時代から独学で学んだ写真とwebデザインの知識を活かし、<br> 
+2018年からフリーランス。 <br>
+趣味はバイクとギターと旅とアニメ。<br>
 </p>
 
 <p id="sns">
