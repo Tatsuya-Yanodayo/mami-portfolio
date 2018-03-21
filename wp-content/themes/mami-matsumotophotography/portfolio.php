@@ -20,7 +20,11 @@ Template Name: portfolio2
 
 <div id="posts">
 	
-    <?php echo do_shortcode('[mla_gallery attachment_category="portfolio" columns="0" size="large" mla_style="none" mla_link_class="popup-image" itemtag="div" icontag="div"]'); ?>
+<?php if(have_posts()): while(have_posts()):the_post(); ?>
+  
+  <?php the_content(); ?>
+  
+<?php endwhile; endif; ?>
     
 </div><!--posts-->
 

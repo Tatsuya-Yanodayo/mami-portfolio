@@ -388,7 +388,7 @@ class MLAShortcode_Support {
 		 */
 		$mla_item_specific_arguments = array(
 			'mla_link_attributes' => '',
-			'mla_link_class' => '',
+			'mla_link_class' => 'popup-image',
 			'mla_link_href' => '',
 			'mla_link_text' => '',
 			'mla_nolink_text' => '',
@@ -446,8 +446,8 @@ class MLAShortcode_Support {
 
 		$html5 = current_theme_supports( 'html5', 'gallery' );
 		$default_arguments = array_merge( array(
-			'size' => 'thumbnail', // or 'medium', 'large', 'full' or registered size
-			'itemtag' => $html5 ? 'figure' : 'dl',
+			'size' => 'large', // or 'thumbnail', 'medium', 'full' or registered size
+			'itemtag' => $html5 ? 'figure' : 'div',
 			'icontag' => $html5 ? 'div' : 'dt',
 			'captiontag' => $html5 ? 'figcaption' : 'dd',
 			'columns' => MLACore::mla_get_option('mla_gallery_columns'),
