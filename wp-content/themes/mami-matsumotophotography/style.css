@@ -828,13 +828,15 @@ div#posts {
 }
 
 div.gallery-item {
-  width: 100%;
-  max-width: 620px;
-  margin: 0px;
+  width: 49.5%;
+  max-width: 510px;
+  margin: 0 0.23% 0.46%;
 }
 
 .gallery-item img {
   width: 100%;
+  vertical-align: bottom;
+
 }
 
 .gallery-item img:hover {
@@ -903,15 +905,7 @@ footer p {
 }
 
 
-/*モバイルサイト終わり*/
-
 @media (min-width: 620px) {
-  div.gallery-item {
-    width: 49.5%;
-    max-width: 510px;
-    margin: 0 0.23%;
-  }
-
   #global-nav .current_page_item:after {
     display: block;
     content: "";
@@ -951,7 +945,7 @@ footer p {
   div.gallery-item {
     width: 30.4%;
     max-width: 410px;
-    margin: 0 1.4% 2.3%;
+    margin: 0 1.4% 2.8%;
   }
   div#category {
     margin-left: 8.5%;
