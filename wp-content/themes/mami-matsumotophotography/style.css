@@ -1056,8 +1056,7 @@ textarea {
 
 div#main {
   width: 80%;
-  height: 1000px;
-  margin: 0 auto;
+  margin: 0 auto 100px;
   text-align: center;
 }
 
