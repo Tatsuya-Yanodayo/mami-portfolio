@@ -446,7 +446,7 @@ class MLAShortcode_Support {
 
 		$html5 = current_theme_supports( 'html5', 'gallery' );
 		$default_arguments = array_merge( array(
-			'size' => 'medium', // or 'thumbnail', 'large', 'full' or registered size
+			'size' => 'large', // or 'thumbnail', 'medium', 'full' or registered size
 			'itemtag' => $html5 ? 'figure' : 'div',
 			'icontag' => $html5 ? 'div' : 'dt',
 			'captiontag' => $html5 ? 'figcaption' : 'dd',
