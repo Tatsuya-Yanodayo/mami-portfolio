@@ -73,7 +73,7 @@ jQuery(function () {
       console.log("はじめの処理");
       console.log(filterTag);
       $container.imagesLoaded(function () {
-        $container.find('.attachment-large').removeAttr('height width');
+        $container.find('.gallery-item a img').removeAttr('height width');
         $items.hide();
         $items.filter(filterTag)
           .addClass('is-animated').show();
