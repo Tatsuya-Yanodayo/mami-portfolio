@@ -66,6 +66,17 @@ jQuery(function () {
     $items = jQuery('.gallery-item')
 
   doMasonry();
+  
+  function runMagPop() {
+  	$container.magnificPopup({
+  		delegate: '.is-animated a',
+    	type: 'image',
+   		gallery: {  //ギャラリーオプション
+    		enabled:true,
+        	preload: [0,1]
+  		}
+  	});
+  };
 
   function doMasonry(filterTag) {
     filterTag = $filters.filter(".active").attr('data-filter');
@@ -86,6 +97,7 @@ jQuery(function () {
           })
         ).done(function () {
           imgLoaded++;
+          runMagPop();
         });
       });
       index++;
@@ -97,7 +109,7 @@ jQuery(function () {
         transitionDuration: "0s",
         itemSelector: ".gallery-item",
         isAnimated: true
-      });
+      }).runMagPop();
     }
   };
 

@@ -226,8 +226,6 @@ if ( !is_admin() ) {
     wp_register_script( 'magnific-popup', get_bloginfo( 'template_directory' ).'/js/jquery.magnific-popup.min.js', array('jquery') );
     /* トップページローダー */
     wp_register_script( 'top_loader', get_bloginfo( 'template_directory' ).'/js/top-loader.js', array('jquery') );
-    /* 画像ポップアップ */
-    wp_register_script( 'run_imagepopup', get_bloginfo( 'template_directory' ).'/js/run_imagepopup.js', array('jquery', 'magnific-popup') );
     
     /* ポートフォリオスクリプト */
     wp_register_script( 'portfolio_loader', get_bloginfo( 'template_directory' ) . '/js/portfolio-loader.js', array('jquery', 'imagesloaded', 'masonry') );
@@ -247,7 +245,6 @@ if ( !is_admin() ) {
       wp_enqueue_script( 'masonry' );
       wp_enqueue_script( 'magnific-popup' );
       wp_enqueue_script( 'portfolio_loader' );
-      wp_enqueue_script( 'run_imagepopup' );
     }
     wp_enqueue_script( 'hmenu' );
     wp_enqueue_script( 'mainscript' );
