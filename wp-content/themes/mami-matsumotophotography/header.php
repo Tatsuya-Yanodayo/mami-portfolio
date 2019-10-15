@@ -10,6 +10,8 @@
     <meta name="description" content="MAMI MATSUMOTO PHOTOGRAPHYはフォトグラファーmami matsumotoのポートフォリオサイトです。">
     <meta name="keywords" content="ポートフォリオ, フォトグラファー, ギャラリー, 旅, 写真,  mami">
 
+<!-- ファビコン-->
+<link rel="shortcut icon" href="https://mami-matsumoto.com/mamepress/wp-content/uploads/2019/10/favicon.ico">
 
 <!-- リセットCSS-->
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/css/reset.css" type="text/css" media="screen">
