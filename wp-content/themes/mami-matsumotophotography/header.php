@@ -79,13 +79,13 @@
             </nav>
             <div class="sns_box nav-box">
                 <div class="sns_button twitter">
-                    <a href="https://twitter.com/mame_ph" target="_blank" title="Tweet"><i class="fa fa-twitter"></i></a>
+                    <a href="https://twitter.com/omame_creator" target="_blank" title="Tweet"><i class="fa fa-twitter"></i></a>
                  </div> 
                 <div class="sns_button facebook">
-                    <a href="https://www.facebook.com/mamimatsumoto4630" target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a>
+                    <a href="https://www.facebook.com/omame.creator" target="_blank" title="Facebook"><i class="fa fa-facebook"></i></a>
                 </div> 
                 <div class="sns_button instagram">
-                    <a href="https://www.instagram.com/mami_matsumoto_ph/" target="_blank"  title="Instagram"><i class="fa fa-instagram"></i></a>
+                    <a href="https://www.instagram.com/omame_creator" target="_blank"  title="Instagram"><i class="fa fa-instagram"></i></a>
                 </div> 
             </div>
         </div>
